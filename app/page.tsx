@@ -1,18 +1,43 @@
+import Image from 'next/image';
+import { HomeContainer } from '@/components/HomeContainer';
+
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-zinc-900">
-      <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-        Dicas e Guias de Jogos Premium
-      </h1>
-      <p className="text-xl text-gray-600 dark:text-gray-400 mb-12">
-        Conteúdo exclusivo para turbinar seu gameplay.
-      </p>
-      <div className="mt-8 text-3xl font-bold text-green-600 dark:text-green-400">
-        Plano Básico: R$ 9,99
+    <HomeContainer>
+      <div className="flex flex-col items-center justify-center space-y-8 text-center px-4 py-16">
+        <Image
+          src="/logo.svg"
+          alt="GameTips Logo"
+          width={64}
+          height={64}
+          priority
+          className="w-16 h-16"
+        />
+        <h1 className="text-6xl font-extrabold text-white leading-tight md:text-8xl">
+          Master Your{' '}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-500">
+            Favorite Games
+          </span>
+        </h1>
+        <p className="text-xl text-gray-400 max-w-2xl">
+          Descubra vídeos épicos, dicas profissionais e histórias em quadrinhos
+          incríveis do mundo dos games
+        </p>
+        <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+          <a
+            href="#"
+            className="flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-purple-600 hover:bg-purple-700 transition duration-150 ease-in-out"
+          >
+            <span className="mr-2">✨</span> Ver Dicas Premium
+          </a>
+          <a
+            href="#"
+            className="flex items-center justify-center px-6 py-3 border border-2 border-purple-600 text-base font-medium rounded-md text-purple-400 hover:bg-gray-800 transition duration-150 ease-in-out"
+          >
+            <span className="mr-2">▶</span> Assistir Vídeos
+          </a>
+        </div>
       </div>
-      <div className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">
-        Plano Premium: R$ 24,99
-      </div>
-    </div>
-)
+    </HomeContainer>
+  );
 }
