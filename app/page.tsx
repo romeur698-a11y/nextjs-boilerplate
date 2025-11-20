@@ -7,9 +7,16 @@ export default function Home() {
       <p className="text-xl text-gray-600 dark:text-gray-400 mb-12">
         Conteúdo exclusivo para turbinar seu gameplay.
       </p>
-      
-      {/* Aqui é onde vamos adicionar a seção de vídeos e preços (R$10 e R$24) */}
 
-    </div>
-  );
-}
+      <div className="mt-8 text-3xl font-bold text-green-600 dark:text-green-400">
+        Plano Básico: R$ 9,99
+      </div>
+      <div className="text-3xl font-bold text-indigo-600 dark:text-indigo-400">
+        Plano Premium: R$ 24,99
+      </div>
+
+
+   
+    
+
+
