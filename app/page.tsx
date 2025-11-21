@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import HomeContainer from '@/HomeContainer';
+import HomeContainer from '@/HomeContainer.tsx';
 export default function Home() {
   return (
     <HomeContainer>
