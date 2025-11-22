@@ -1,9 +1,9 @@
-// components/HomeContainer.tsx
-import React from 'react';
+import React, { PropsWithChildren } from 'react'; // <--- Importar PropsWithChildren
 
-// Tipagem React.FC com sintaxe de função de seta correta
-export const HomeContainer: React.FC =   ( { children } )  => {
-  return 
+// Opção 1: Usando PropsWithChildren para tipar as props
+// Esta é a abordagem mais recomendada hoje.
+export const HomeContainer = ({ children }: PropsWithChildren) => {
+  return (
     <div className='max-w-7xl mx-auto p-4'>{children}</div>
   );
 };
