@@ -1,8 +1,8 @@
 import Image from 'next/image';
-
+import { HomeContainer } from '../components/HomeContainer';
 export default function Home() {
   return (
-    
+    <HomeContainer>
       <div className="flex flex-col items-center justify-center space-y-8 text-center px-4 py-16">
         <Image
           src="/logo.svg"
